@@ -8,6 +8,7 @@ export default {
         'cinza-escuro': '#394168',
         'azul-escuro': '#1F2471',
         'cinza-claro': '#665489',
+        'roxo-transparente': '#896eff41',
       },
     },
   },

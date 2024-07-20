@@ -24,7 +24,7 @@ const SectionHome = () => {
                             <FaAngleRight className='text-lg text-white'/>
                         </button>
 
-                        <a href="#" className='text-roxo font-medium'>Get A Quote</a>
+                        <a href="#" className='text-roxo font-medium'>Learn More</a>
                     </div>
                 </div>
 

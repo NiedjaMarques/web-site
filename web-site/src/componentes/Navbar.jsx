@@ -4,14 +4,14 @@ import { FaAngleRight, FaAlignRight } from "react-icons/fa6";
 const Navbar = () => {
     return(
         <>
-            <div className='bg-red-30 flex justify-between md:justify-around my-5'>
+            <div className='flex justify-between my-5'>
                 <div className='max-h-10 max-w-32'>
                     <img src={logo} alt="imagem logo" />
                 </div>
 
                 <div className='flex items-center'>
                     <nav className='hidden md:flex'>
-                        <ul className='flex '>
+                        <ul className='flex text-base'>
                             <li className='mx-2 cursor-pointer font-medium text-cinza-escuro'>Home</li>
                             <li className='mx-2 cursor-pointer font-medium text-cinza-escuro'>Pages</li>
                             <li className='mx-2 cursor-pointer font-medium text-cinza-escuro'>Services</li>
