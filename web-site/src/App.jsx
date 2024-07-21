@@ -5,6 +5,7 @@ import SectionHome from './componentes/SectionHome'
 import SectionCarrossel from './componentes/SectionCarrossel.jsx'
 import SectionDados from './componentes/SectionDados.jsx'
 import SectionServices from './componentes/SectionServices.jsx'
+import SectionAboutus from './componentes/SectionAboutUs.jsx'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <SectionDados/>
       <MainLayout>
         <SectionServices/>
+        {/* <SectionAboutus/> */}
       </MainLayout>
       
     </>
