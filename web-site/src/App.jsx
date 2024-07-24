@@ -9,6 +9,9 @@ import SectionAboutus from './componentes/SectionAboutUs.jsx'
 import SectionFetures from './componentes/SectionFetures.jsx'
 import SectionProjects from './componentes/SectionProjects.jsx'
 import SectionNewsletter from './componentes/SectionNewsletter.jsx'
+import SectionTeam from './componentes/SectionTeam.jsx'
+import SectionPricing from  './componentes/SectionPricing.jsx'
+import SectionTestmonial from './componentes/SectionTestmonial.jsx'
 
 function App() {
   return (
@@ -25,7 +28,12 @@ function App() {
         <SectionFetures/>
         <SectionProjects/>
       </MainLayout>
-      <SectionNewsletter/>  
+      <SectionNewsletter/> 
+      <MainLayout>
+        <SectionTeam/>
+        <SectionPricing/>
+      </MainLayout> 
+      <SectionTestmonial/>
     </>
   )
 }

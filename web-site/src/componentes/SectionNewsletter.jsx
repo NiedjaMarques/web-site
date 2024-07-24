@@ -22,9 +22,9 @@ const SectionNewsletter = () => {
                         Integer pretium molestie nisl, non blandit lectus suscipit in. Vivamus tellus diam, iaculis eget nulla sit amet, tincidunt consectetur sem. Suspendisse laoreet, quam sed faucibus feugiat, tortor velit suscipit orci, sed consectetur ante eros id urna. Mauris luctus nulla ut pharetra tempor.
                     </p>
 
-                    <div className="flex items-center w-full max-w-md bg-white rounded-full shadow-lg">
-                        <input className="rounded-full p-4 text-black flex-grow outline-none" type="email" name="#" id="#" placeholder="Email Address" />
-                        <button className="bg-roxo hover:bg-blue-700 transition-all duration-500 font-bold p-2 rounded-full mr-2 ">Subscribe Now</button>
+                    <div className='bg-red-30 p-3 flex items-center max-w-sm rounded-full shadow-lg bg-white'>
+                        <input className='rounded-full w-[30%] absolute flex-grow outline-none text-black' type="email" name="#" id="#" placeholder="Email Address"/>
+                        <button className='rounded-full relative left-[50%] sm:left-2/3 p-2 bg-roxo hover:bg-blue-700 transition-all duration-500 font-bold'>Subscribe Now</button>
                     </div>
                 </div>
             </div>
