@@ -16,7 +16,7 @@ import Carousel from './componentes/SectionTestmonial.jsx'
 function App() {
   return (
     <>
-      {/* <MainLayout>
+      <MainLayout>
         <Header/>
         <SectionHome/>
         <SectionCarrossel/>        
@@ -32,7 +32,7 @@ function App() {
       <MainLayout>
         <SectionTeam/>
         <SectionPricing/>
-      </MainLayout>  */}
+      </MainLayout> 
       <Carousel/>
     </>
   )
