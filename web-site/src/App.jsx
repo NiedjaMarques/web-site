@@ -11,12 +11,12 @@ import SectionProjects from './componentes/SectionProjects.jsx'
 import SectionNewsletter from './componentes/SectionNewsletter.jsx'
 import SectionTeam from './componentes/SectionTeam.jsx'
 import SectionPricing from  './componentes/SectionPricing.jsx'
-import SectionTestmonial from './componentes/SectionTestmonial.jsx'
+import Carousel from './componentes/SectionTestmonial.jsx'
 
 function App() {
   return (
     <>
-      <MainLayout>
+      {/* <MainLayout>
         <Header/>
         <SectionHome/>
         <SectionCarrossel/>        
@@ -32,8 +32,8 @@ function App() {
       <MainLayout>
         <SectionTeam/>
         <SectionPricing/>
-      </MainLayout> 
-      <SectionTestmonial/>
+      </MainLayout>  */}
+      <Carousel/>
     </>
   )
 }

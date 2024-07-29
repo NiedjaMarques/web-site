@@ -8,3 +8,7 @@ body{
     box-sizing: border-box;
     /* //background-color: #896eff41 */
 }
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
