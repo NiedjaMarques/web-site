@@ -12,6 +12,8 @@ import SectionNewsletter from './componentes/SectionNewsletter.jsx'
 import SectionTeam from './componentes/SectionTeam.jsx'
 import SectionPricing from  './componentes/SectionPricing.jsx'
 import Carousel from './componentes/SectionTestmonial.jsx'
+import SectionBlog from './componentes/SectionBlog.jsx'
+import SectionContact from './componentes/SectionContact.jsx'
 
 function App() {
   return (
@@ -21,19 +23,29 @@ function App() {
         <SectionHome/>
         <SectionCarrossel/>        
       </MainLayout >
+
       <SectionDados/>
+
       <MainLayout>
         <SectionServices/>
         <SectionAboutus/>
         <SectionFetures/>
         <SectionProjects/>
       </MainLayout>
-      <SectionNewsletter/> 
+
+      <SectionNewsletter/>
+      
       <MainLayout>
         <SectionTeam/>
         <SectionPricing/>
-      </MainLayout> 
+      </MainLayout>
+      
       <Carousel/>
+
+      <MainLayout>
+        <SectionBlog/>
+        <SectionContact/>
+      </MainLayout>
     </>
   )
 }
