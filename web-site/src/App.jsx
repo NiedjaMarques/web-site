@@ -14,6 +14,8 @@ import SectionPricing from  './componentes/SectionPricing.jsx'
 import Carousel from './componentes/SectionTestmonial.jsx'
 import SectionBlog from './componentes/SectionBlog.jsx'
 import SectionContact from './componentes/SectionContact.jsx'
+import SectionMoreWithUs from './componentes/SectionMoreWithUs.jsx'
+import SectionEnd from './componentes/SectionEnd.jsx'
 
 function App() {
   return (
@@ -45,7 +47,10 @@ function App() {
       <MainLayout>
         <SectionBlog/>
         <SectionContact/>
+        <SectionMoreWithUs/>
+        
       </MainLayout>
+      <SectionEnd/>
     </>
   )
 }
