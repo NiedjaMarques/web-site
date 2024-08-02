@@ -4,7 +4,7 @@ import pic5 from '../../public/app/view/main-slider/slider1/pic5.png';
 const SectionHome = () => {
     return(
         <>
-            <div className="mt-10 md:flex items-center justify-center px-2">
+            <div className="mt-28 md:flex items-center justify-center px-2">
                 <div className="md:w-1/2">
                     <h6 className="sm:text-xl mb-4 font-bold text-roxo">
                         WE CREATE IDEAS
