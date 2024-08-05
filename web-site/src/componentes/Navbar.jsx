@@ -48,19 +48,95 @@ const Navbar = () => {
 
     return(
         <>
-            <div className='flex justify-between items-center w-full px-4 sm:px-6 lg:px-8'>
+            <div className='flex justify-between items-center '>
                 <div className='h-10 w-32'>
                     <img src={logo} alt="imagem logo" />
                 </div>
 
                 <div className='flex items-center'>
                     <nav className='hidden md:flex'>
-                        <ul className='space-x-5 flex text-sm cursor-pointer font-semibold text-cinza-escuro'>
-                            <li className=''>Home</li>
-                            <li className='flex items-center'>Pages<FaAngleDown/></li>
-                            <li className='flex items-center'>Services<FaAngleDown/></li>
-                            <li className='flex items-center'>Blog <FaAngleDown/></li>
-                            <li className=''>Contact Us</li>
+                        <ul className='space-x-5 flex text-sm cursor-pointer  text-cinza-escuro'>
+                            <li className='hover:text-indigo-500 transition-all duration-300'>Home</li>
+
+                            <li className='group'>
+                                <div className='flex items-center hover:text-indigo-500 transition-all duration-300'>Pages<FaAngleDown className='text-xs'/></div>
+
+                                <ul className='bg-white shadow-2xl py-1.5 absolute w-56 transition-opacity opacity-0 group-hover:opacity-100 group-hover:block hidden '>
+                                    
+                                    <li className='hover:bg-indigo-100 bg-opacity-5 transition duration-700 ease-in-out flex items-center'>                                        
+                                        <span className='py-2.5 px-6 hover:text-indigo-500 hover:translate-x-3 transition duration-300'>About Us</span>
+                                    </li>
+
+                                    <li className='hover:bg-indigo-100 bg-opacity-5 transition duration-300 ease-in-out flex items-center'>
+                                        <span className='py-2.5 px-6 hover:text-indigo-500 hover:translate-x-3 transition duration-300'>Fac</span>
+                                    </li>
+
+                                    <li className='hover:bg-indigo-100 bg-opacity-5 transition duration-300 ease-in-out flex items-center'>
+                                        <span className='py-2.5 px-6 hover:text-indigo-500 hover:translate-x-3 transition duration-300'>Pricing Table</span>
+                                    </li>
+
+                                    <li className='hover:bg-indigo-100 bg-opacity-5 transition duration-300 ease-in-out flex items-center'>
+                                        <span className='py-2.5 px-6 hover:text-indigo-500 hover:translate-x-3 transition duration-300'>Team</span>
+                                    </li>
+
+                                    <li className='hover:bg-indigo-100 bg-opacity-5 transition duration-300 ease-in-out flex items-center'>
+                                        <span className='py-2.5 px-6 hover:text-indigo-500 hover:translate-x-3 transition duration-300'>Coming Soon</span>
+                                    </li>
+
+                                    <li className='hover:bg-indigo-100 bg-opacity-5 transition duration-300 ease-in-out flex items-center'>
+                                        <span className='py-2.5 px-6 hover:text-indigo-500 hover:translate-x-3 transition duration-300'>Error 404</span>
+                                    </li>
+                                    
+                                    <li className='hover:bg-indigo-100 bg-opacity-5 transition duration-300 ease-in-out flex items-center'>
+                                        <span className='py-2.5 px-6 hover:text-indigo-500 hover:translate-x-3 transition duration-300'>Site Down</span>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li className='group'>
+                                
+                                <div className='flex items-center hover:text-indigo-500 transition-all duration-300'>Services<FaAngleDown className='text-xs'/></div>
+
+                                <ul className='bg-white shadow-2xl py-1.5 absolute w-56 transition-opacity opacity-0 group-hover:opacity-100 group-hover:block hidden'>
+
+                                    <li className='hover:bg-indigo-100 bg-opacity-5 transition duration-300 ease-in-out flex items-center'>
+
+                                        <span className='py-2.5 px-6 hover:text-indigo-500 hover:translate-x-3 transition duration-300'>Services</span>
+
+                                    </li>
+
+                                    <li className='hover:bg-indigo-100 bg-opacity-5 transition duration-700 ease-in-out flex items-center'>
+
+                                        <span className='py-2.5 px-6 hover:text-indigo-500 hover:translate-x-3 transition duration-300'>Services Details</span>
+
+                                    </li>
+                                </ul>
+
+                            </li>
+
+                            <li className='group'>
+                                
+                                <div className='flex items-center hover:text-indigo-500 transition-all duration-300'>Blog<FaAngleDown className='text-xs'/></div>
+
+                                <ul className='bg-white shadow-2xl py-1.5 absolute w-56 transition-opacity opacity-0 group-hover:opacity-100 group-hover:block hidden'>
+
+                                    <li className='hover:bg-indigo-100 bg-opacity-5 transition duration-300 ease-in-out flex items-center'>
+
+                                        <span className='py-2.5 px-6 hover:text-indigo-500 hover:translate-x-3 transition duration-300'>Large Right Sidebar</span>
+
+                                    </li>
+
+                                    <li className='hover:bg-indigo-100 bg-opacity-5 transition duration-700 ease-in-out flex items-center'>
+
+                                        <span className='py-2.5 px-6 hover:text-indigo-500 hover:translate-x-3 transition duration-300'>Blog Details</span>
+
+                                    </li>
+                                </ul>
+
+                            </li>
+                            
+                            <li className='hover:text-indigo-500 transition-all duration-300'>Contact Us</li>
                         </ul>
                     </nav>
 
