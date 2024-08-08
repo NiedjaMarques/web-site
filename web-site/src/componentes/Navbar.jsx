@@ -48,14 +48,17 @@ const Navbar = () => {
 
     return(
         <>
-            <div className='flex justify-between items-center '>
+            <div className='flex justify-between items-center container mx-auto px-10'>
                 <div className='h-10 w-32'>
                     <img src={logo} alt="imagem logo" />
                 </div>
 
                 <div className='flex items-center'>
+
                     <nav className='hidden md:flex'>
+
                         <ul className='space-x-5 flex text-sm cursor-pointer  text-cinza-escuro'>
+
                             <li className='hover:text-indigo-500 transition-all duration-300'>Home</li>
 
                             <li className='group'>
@@ -137,12 +140,14 @@ const Navbar = () => {
                             </li>
                             
                             <li className='hover:text-indigo-500 transition-all duration-300'>Contact Us</li>
+                            
                         </ul>
+
                     </nav>
 
                     <div className='flex items-center '>
-                        <div className='hidden sm:flex mx-5 md:mx-2 items-center'>
-                            <button className='bg-roxo rounded-full p-2 mx-2 shadow-xl'>
+                        <div className='hidden sm:flex mx-5 md:mx-2 items-center group'>
+                            <button className='bg-roxo rounded-full p-2 mx-2 shadow-xl transition-all ease-linear duration-200 group-hover:bg-blue-600'>
                                 <FaAngleRight className='text-sm  text-white'/>
                             </button>
                             <a href="#" className='text-roxo font-medium text-sm transition-all ease-linear duration-200 hover:text-blue-600'>Get A Quote</a>

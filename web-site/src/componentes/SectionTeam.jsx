@@ -1,3 +1,8 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Pagination } from 'swiper/modules';
 import person1 from '../../public/app/view/Teams/person1.jpg'
 import person2 from '../../public/app/view/Teams/person2.jpg'
 import person3 from '../../public/app/view/Teams/person3.jpg'
@@ -7,10 +12,10 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa6";
 const SectionTeam = () => {
     return(
         <>
-            <div>
+            <div className='container mx-auto px-10'>
                 <div className="flex flex-col items-center">
 
-                    <h6 className="text-xl px-4 py-2 my-4 text-center font-semibold text-roxo bg-roxo-transparente rounded-md">
+                    <h6 className="px-4 py-2 my-4 text-center font-semibold text-roxo bg-roxo-transparente rounded-md">
                         Team
                     </h6>
 
@@ -20,189 +25,201 @@ const SectionTeam = () => {
 
                 </div>
 
-                <div className='min-h-screen flex items-center justify-center py-10'>
+                <div className='flex items-center justify-center pb-10'>
 
-                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
+                    <Swiper slidesPerView={1}
+                    spaceBetween={10}
+                    loop={true}
+                    modules={[Pagination]}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 3, 
+                            spaceBetween: 5,
+                            centeredSlides: false,
+                        },
+                    }}
+                    className='cursor-grab'>
 
-                        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <SwiperSlide>
+                            <div className="bg-white rounded-lg shadow-lg overflow-hidden m-5 bgslate-700">
 
-                            <img src={person1} alt="img person1" className="rounded-md"/>
+                                <img src={person1} alt="img person1" className="rounded-md"/>
 
-                            <div className="p-6">
+                                <div className="p-6">
 
-                                <h2 className="text-xl font-bold text-azul-escuro">Alina Jia</h2>
+                                    <h2 className="text-xl font-bold text-azul-escuro">Alina Jia</h2>
 
-                                <p className="text-azul-escuro font-semibold">Senior Designer</p>
+                                    <p className="text-azul-escuro font-semibold">Senior Designer</p>
 
-                                <div className="flex mt-4 space-x-2">
+                                    <div className="flex mt-4 space-x-2">
 
-                                    <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
-                                        <FaFacebookF />
-                                    </a>
-                                    <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
-                                        <FaInstagram/>
-                                    </a>
-                                    <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
-                                        <FaTwitter/>
-                                    </a>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-
-                            <img src={person2} alt="img person2" className="rounded-md"/>
-
-                            <div className="p-6">
-
-                                <h2 className="text-xl font-bold text-azul-escuro">Suresh Doe</h2>
-
-                                <p className="text-azul-escuro font-semibold">Senior Designer</p>
-
-                                <div className="flex mt-4 space-x-2">
-
-                                    <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
-                                        <FaFacebookF />
-                                    </a>
-
-                                    <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
-                                        <FaInstagram/>
-                                    </a>
-
-                                    <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
-                                        <FaTwitter/>
-                                    </a>
+                                        <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
+                                            <FaFacebookF />
+                                        </a>
+                                        <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
+                                            <FaInstagram/>
+                                        </a>
+                                        <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
+                                            <FaTwitter/>
+                                        </a>
+                                        
+                                    </div>
 
                                 </div>
 
                             </div>
+                        </SwiperSlide>
 
-                        </div>
+                        <SwiperSlide>
+                            <div className="bg-white rounded-lg shadow-lg overflow-hidden m-5">
 
-                        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                                <img src={person2} alt="img person2" className="rounded-md"/>
 
-                            <img src={person3} alt="img person3" className="rounded-md"/>
+                                <div className="p-6">
 
-                            <div className="p-6">
-                                
-                                <h2 className="text-xl font-bold text-azul-escuro">Ashley Davis</h2>
+                                    <h2 className="text-xl font-bold text-azul-escuro">Suresh Doe</h2>
 
-                                <p className="text-azul-escuro font-semibold">Senior Designer</p>
+                                    <p className="text-azul-escuro font-semibold">Senior Designer</p>
 
-                                <div className="flex mt-4 space-x-2">
+                                    <div className="flex mt-4 space-x-2">
 
-                                    <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
-                                        <FaFacebookF />
-                                    </a>
+                                        <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
+                                            <FaFacebookF />
+                                        </a>
+                                        <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
+                                            <FaInstagram/>
+                                        </a>
+                                        <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
+                                            <FaTwitter/>
+                                        </a>
 
-                                    <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
-                                        <FaInstagram/>
-                                    </a>
-
-                                    <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
-                                        <FaTwitter/>
-                                    </a>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-
-                            <img src={person4} alt="img person5" className="rounded-md"/>
-
-                            <div className="p-6">
-
-                                <h2  className="text-xl font-bold text-azul-escuro">Michael Johnson</h2>
-
-                                <p className="text-azul-escuro font-semibold">Senior Designer</p>
-
-                                <div className="flex mt-4 space-x-2">
-
-                                    <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
-                                        <FaFacebookF />
-                                    </a>
-
-                                    <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
-                                        <FaInstagram/>
-                                    </a>
-
-                                    <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
-                                        <FaTwitter/>
-                                    </a>
+                                    </div>
 
                                 </div>
 
                             </div>
+                        </SwiperSlide>
 
-                        </div>
+                        <SwiperSlide>
+                            <div className="bg-white rounded-lg shadow-lg overflow-hidden m-5">
 
-                        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                                <img src={person3} alt="img person3" className="rounded-md"/>
 
-                            <img src={person1} alt="img person1" className="rounded-md"/>
-
-                            <div className="p-6">
-
-                                <h2  className="text-xl font-bold text-azul-escuro">Elizabeth Anderson</h2>
-                                
-                                <p className="text-azul-escuro font-semibold">Senior Designer</p>
+                                <div className="p-6">
                             
-                                <div className="flex mt-4 space-x-2">
+                                    <h2 className="text-xl font-bold text-azul-escuro">Ashley Davis</h2>
 
-                                    <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
-                                        <FaFacebookF />
-                                    </a>
+                                    <p className="text-azul-escuro font-semibold">Senior Designer</p>
 
-                                    <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
-                                        <FaInstagram/>
-                                    </a>
+                                    <div className="flex mt-4 space-x-2">
 
-                                    <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
-                                        <FaTwitter/>
-                                    </a>
+                                        <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
+                                            <FaFacebookF />
+                                        </a>
+                                        <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
+                                            <FaInstagram/>
+                                        </a>
+                                        <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
+                                            <FaTwitter/>
+                                        </a>
 
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-
-                            <img src={person2} alt="img person2" className="rounded-md"/>
-
-                            <div className="p-6">
-
-                                <h2  className="text-xl font-bold text-azul-escuro">Charles Taylor</h2>
-
-                                <p className="text-azul-escuro font-semibold">Senior Designer</p>
-
-                                <div className="flex mt-4 space-x-2">
-
-                                    <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
-                                        <FaFacebookF />
-                                    </a>
-
-                                    <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
-                                        <FaInstagram/>
-                                    </a>
-
-                                    <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
-                                        <FaTwitter/>
-                                    </a>
+                                    </div>
 
                                 </div>
 
                             </div>
+                        </SwiperSlide>
 
-                        </div>
+                        <SwiperSlide>
+                            <div className="bg-white rounded-lg shadow-lg overflow-hidden m-5">
+
+                                <img src={person4} alt="img person5" className="rounded-md"/>
+
+                                <div className="p-6">
+
+                                    <h2  className="text-xl font-bold text-azul-escuro">Michael Johnson</h2>
+
+                                    <p className="text-azul-escuro font-semibold">Senior Designer</p>
+
+                                    <div className="flex mt-4 space-x-2">
+
+                                        <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
+                                            <FaFacebookF />
+                                        </a>
+                                        <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
+                                            <FaInstagram/>
+                                        </a>
+                                        <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
+                                            <FaTwitter/>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <div className="bg-white rounded-lg shadow-lg overflow-hidden m-5">
+
+                                <img src={person1} alt="img person1" className="rounded-md"/>
+
+                                <div className="p-6">
+
+                                    <h2  className="text-xl font-bold text-azul-escuro">Elizabeth Anderson</h2>
+                            
+                                    <p className="text-azul-escuro font-semibold">Senior Designer</p>
+                            
+                                    <div className="flex mt-4 space-x-2">
+                                        <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
+                                            <FaFacebookF />
+                                        </a>
+                                        <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
+                                            <FaInstagram/>
+                                        </a>
+                                        <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
+                                            <FaTwitter/>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <div className="bg-white rounded-lg shadow-lg overflow-hidden m-5">
+
+                                <img src={person2} alt="img person2" className="rounded-md"/>
+
+                                <div className="p-6">
+
+                                    <h2  className="text-xl font-bold text-azul-escuro">Charles Taylor</h2>
+
+                                    <p className="text-azul-escuro font-semibold">Senior Designer</p>
+
+                                    <div className="flex mt-4 space-x-2">
+
+                                        <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
+                                            <FaFacebookF />
+                                        </a>
+                                        <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
+                                            <FaInstagram/>
+                                        </a>
+                                        <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
+                                            <FaTwitter/>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </SwiperSlide>
                         
-                    </div>
+                    </Swiper>
 
                 </div>
 

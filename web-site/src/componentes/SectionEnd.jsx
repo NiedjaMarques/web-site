@@ -45,18 +45,17 @@ const SectionEnd = () => {
                                 Maecenas pellentesque placerat quam, in finibus nisl tincidunt sed. Aliquam magna augue, malesuada ut feugiat eget, cursus eget felis.
                             </p>
                             <div className="flex pt-4 pb-8 space-x-2">
-                                <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
+                                <a href="#" className="p-2 rounded-full text-roxo hover:text-white transition-all ease-linear duration-500 bg-purple-100 hover:bg-purple-600">
                                     <FaFacebookF />
                                 </a>
-                                <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
+                                <a href="#" className="p-2 rounded-full text-roxo hover:text-white transition-all ease-linear duration-500 bg-purple-100 hover:bg-purple-600">
                                     <FaInstagram/>
                                 </a>
-                                <a href="#" className="p-2 rounded-full text-roxo hover:text-white bg-purple-100 hover:bg-purple-600">
+                                <a href="#" className="p-2 rounded-full text-roxo hover:text-white transition-all ease-linear duration-500 bg-purple-100 hover:bg-purple-600">
                                     <FaTwitter/>
                                 </a>
                             </div>
                         </div>
-
                         <div>
                             <p className='font-bold text-2xl sm:text-3xl pb-3'>
                                 Our links

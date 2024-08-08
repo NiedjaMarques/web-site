@@ -3,7 +3,7 @@ import { FaAngleRight } from "react-icons/fa6"
 const SectionPricing = () => {
     return(
         <>
-            <div className="py-10">
+            <div className="py-10 container mx-auto px-10">
                 
                 <div className="flex flex-col items-center">
 

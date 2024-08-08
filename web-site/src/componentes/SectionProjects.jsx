@@ -1,49 +1,63 @@
-import img1 from '../../public/app/view/pic1.jpg'
-import img2 from '../../public/app/view/pic2.jpg'
-import img3 from '../../public/app/view/pic3.jpg'
-import img4 from '../../public/app/view/pic4.jpg'
-import img5 from '../../public/app/view/pic5.jpg'
-import img6 from '../../public/app/view/pic6.jpg'
+import React, { useState } from 'react';
+import img1 from '../../public/app/view/pic11.jpg';
+import img2 from '../../public/app/view/pic22.jpg';
+import img3 from '../../public/app/view/pic33.jpg';
+import img4 from '../../public/app/view/pic44.jpg';
+import img5 from '../../public/app/view/pic55.jpg';
+import img6 from '../../public/app/view/pic66.jpg';
+
+const items = [
+    { id: 1, category: 'All', img: [img1, img2, img3, img4, img5, img6] },
+    { id: 2, category: 'Web Design', img: [img4, img5, img6] },
+    { id: 3, category: 'Web Development', img: [img1] },
+    { id: 4, category: 'Branding', img: [img4, img5, img6, img3] },
+    { id: 5, category: 'Mobile App', img: [img5] },
+    { id: 6, category: 'SEO', img: [img6, img4, img5] },
+];
 
 const SectionProjects = () => {
-    return(
-        <>
-            <div className="py-5">
+    const [filter, setFilter] = useState('All');
 
-                <div className="flex flex-col items-center">
+    const handleFilterChange = (newFilter) => {
+        setFilter(newFilter);
+    };
 
-                    <h6 className="text-xl px-4 py-2 my-4 text-center font-semibold text-roxo bg-roxo-transparente rounded-md">
-                        Projects
-                    </h6>
+    const filteredItems = filter === 'All' ? items.find(item => item.category === 'All').img : items.find(item => item.category === filter)?.img || [];
 
-                    <h1 className="text-center font-bold text-3xl text-azul-escuro mb-5">
-                        Take A Look At Our Latest Portfolio
-                    </h1>
+    return (
+        <div className='py-5 container mx-auto px-10'>
+            <div className="flex flex-col items-center">
 
-                </div>
+                <h6 className="px-4 py-2 my-4 text-center font-semibold text-roxo bg-roxo-transparente rounded-md">
+                    Projects
+                </h6>
 
-                <div>
-                    <ul className='flex items-center justify-around bg-roxo-transparente my-3 p-3 rounded-full text-azul-escuro font-semibold'>
-                        <li className='cursor-pointer px-4 py-1 rounded-3xl'>All</li>
-                        <li className='cursor-pointer px-4 py-1 rounded-3xl'>Web Design</li>
-                        <li className='cursor-pointer px-4 py-1 rounded-3xl'>Web Development</li>
-                        <li className='cursor-pointer px-4 py-1 rounded-3xl'>Branding</li>
-                        <li className='cursor-pointer active:bg-blue-500 bg-slate-400 px-4 py-1 rounded-3xl'>Mobile App</li>
-                        <li className='cursor-pointer active:text-white active:drop-shadow-2xl px-4 py-1 rounded-3xl'>SEO</li>
-                    </ul>
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-around">
-                    <div className=''><img src={img1} alt="" /></div>
-                    <img className='' src={img2} alt="" />
-                    <img className='' src={img3} alt="" />
-                    <img className='' src={img4} alt="" />
-                    <img className='' src={img5} alt="" />
-                    <img className='' src={img6} alt="" />
-                </div>
+                <h1 className="text-center font-bold text-2xl text-azul-escuro mb-5">
+                    Take A Look At Our Latest Portfolio
+                </h1>
 
             </div>
-        </>
-    )
-}
-export default SectionProjects
+
+            <div className='text-azul-escuro flex flex-wrap justify-center items-center mb-4'>
+                {['All', 'Web Design', 'Web Development', 'Branding', 'Mobile App', 'SEO'].map(category => (
+                    <button
+                        key={category}
+                        onClick={() => handleFilterChange(category)}
+                        className={`m-2 px-4 py-1 rounded-3xl cursor-pointer ${
+                            filter === category ? 'bg-purple-500 text-white' : 'bg-gray-200 text-azul-escuro'
+                        }`}
+                    >
+                        {category}
+                    </button>
+                ))}
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-items-center align-items-center cursor-pointer">
+                {filteredItems.map((image, index) => (
+                    <img key={index} src={image} alt="..." />
+                ))}
+            </div>
+        </div>
+    );
+};
+export default SectionProjects;

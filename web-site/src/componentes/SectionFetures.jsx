@@ -7,10 +7,10 @@ import virtualreality from '../../public/app/view/virtual-reality.png'
 const SectionFetures = () => {
     return(
         <>
-            <div className="mt-10 md:flex items-center justify-center px-2">
+            <div className="mt-10 md:flex items-center justify-center container mx-auto px-10">
 
                 <div className="md:w-1/2 mt-2 ">
-                    <h6 className="text-lg w-32 text-center px-4 py-2 my-4 font-semibold text-roxo bg-roxo-transparente rounded-md">
+                    <h6 className="w-32 text-center px-4 py-2 my-4 font-semibold text-roxo bg-roxo-transparente rounded-md">
                         Fetures
                     </h6>
 
@@ -20,7 +20,7 @@ const SectionFetures = () => {
 
                     <div className="mt-10 mb-5 flex items-center justify-center">
 
-                        <img className="w-16 h-16 " src={virtualreality} alt="imgvirtualreality"/>
+                        <img className="w-16 rounded-full h-16 " src={virtualreality} alt="imgvirtualreality"/>
 
                         <div className="ml-5">
                         

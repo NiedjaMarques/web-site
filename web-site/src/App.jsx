@@ -1,5 +1,5 @@
 import './index.css'
-import MainLayout from './componentes/Main'
+//import MainLayout from './componentes/Main'
 import Header from './componentes/Header'
 import SectionHome from './componentes/SectionHome'
 import SectionCarrossel from './componentes/SectionCarrossel.jsx'
@@ -11,7 +11,7 @@ import SectionProjects from './componentes/SectionProjects.jsx'
 import SectionNewsletter from './componentes/SectionNewsletter.jsx'
 import SectionTeam from './componentes/SectionTeam.jsx'
 import SectionPricing from  './componentes/SectionPricing.jsx'
-import Carousel from './componentes/SectionTestmonial.jsx'
+import Testmonial from './componentes/SectionTestmonial.jsx'
 import SectionBlog from './componentes/SectionBlog.jsx'
 import SectionContact from './componentes/SectionContact.jsx'
 import SectionMoreWithUs from './componentes/SectionMoreWithUs.jsx'
@@ -20,36 +20,35 @@ import SectionEnd from './componentes/SectionEnd.jsx'
 function App() {
   return (
     <>
-      <MainLayout>
+      {/* <MainLayout> */}
         <Header/>
         <SectionHome/>
         <SectionCarrossel/>        
-      </MainLayout >
+      {/* </MainLayout > */}
 
       <SectionDados/>
 
-      <MainLayout>
+      {/* <MainLayout> */}
         <SectionServices/>
         <SectionAboutus/>
         <SectionFetures/>
         <SectionProjects/>
-      </MainLayout>
+      {/* </MainLayout> */}
 
       <SectionNewsletter/>
       
-      <MainLayout>
+      {/* <MainLayout> */}
         <SectionTeam/>
         <SectionPricing/>
-      </MainLayout>
+      {/* </MainLayout> */}
       
-      <Carousel/>
+      <Testmonial/>
 
-      <MainLayout>
+      {/* <MainLayout> */}
         <SectionBlog/>
         <SectionContact/>
-        <SectionMoreWithUs/>
-        
-      </MainLayout>
+        <SectionMoreWithUs/>        
+      {/* </MainLayout> */}
       <SectionEnd/>
     </>
   )

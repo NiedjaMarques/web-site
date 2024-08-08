@@ -7,22 +7,23 @@ import person1 from '../../public/app/view/Teams/person1.jpg';
 import person2 from '../../public/app/view/Teams/person2.jpg';
 import person3 from '../../public/app/view/Teams/person3.jpg';
 import person4 from '../../public/app/view/Teams/person4.jpg';
+import bg3 from '../../public/app/view/background/bg/bg3.png'
 import { FaStar } from "react-icons/fa6";
 
-const Carousel = () => {
+const Testmonial = () => {
     return(
         <>
-            <div className='bg-roxo py-10 grid grid-cols-1 md:grid-cols-3 gap-2 items-center'>
+            <div style={{ backgroundImage: `url(${bg3})` }} className='bg-cover bg-center bg-no-repeat bg-roxo py-10 grid grid-cols-1 md:grid-cols-3 gap-2 items-center'>
 
                 <div className='p-4 text-white sm:col-span-1'>
 
-                    <h1 className='text-lg font-semibold mb-4'>
+                    <h1 className='font-semibold mb-4'>
                         <span className='bg-violet-500 rounded-md py-2 borde px-4'>
                             Testmonial
                         </span>
                     </h1>
 
-                    <p className='font-bold text-3xl mb-4'>
+                    <p className='font-bold text-2xl mb-4'>
                         See What Are They Say About Us
                     </p>
 
@@ -181,5 +182,5 @@ const Carousel = () => {
         </>
     )
 }
-export default Carousel
+export default Testmonial
 
