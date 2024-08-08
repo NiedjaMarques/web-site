@@ -8,3 +8,31 @@ body{
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
+/* @keyframes swing {
+    0% { transform: rotate(-15px); }
+    50% { transform: rotate(12px); }
+    100% { transform: rotate(-15px); }
+}
+
+@layer utilities {
+    .animate-swing {
+      animation: swing 4s infinite ease-in-out;
+      transform-origin: top left;
+    }
+} */
+
+@keyframes swing {
+    0% { transform: rotate(-2deg); }
+    25% { transform: rotate(2deg); }
+    50% { transform: rotate(-2deg); }
+    75% { transform: rotate(2deg); }
+    100% { transform: rotate(-2deg); }
+}
+
+@layer utilities {
+    .animate-swing {
+      animation: swing 8s infinite ease-in-out;
+      transform-origin: center;
+    }
+}

@@ -74,7 +74,7 @@ const SectionFetures = () => {
                     
                 </div>
 
-                <div className="md:w-1/2 transition-all ease-linear duration-500">
+                <div className="md:w-1/2 transition-all ease-linear duration-500 animate-swing">
                     <img src={img5} alt="img5"/>
                 </div>
             </div>

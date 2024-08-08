@@ -59,8 +59,8 @@ const SectionContact = () => {
                             <a href="#" className='text-roxo font-medium text-sm transition-all ease-linear duration-200 hover:text-blue-600'>Learn More</a>
                         </div>
                     </div>
-                    <div className='md:w-1/2 transition-all ease-linear duration-500'>
-                        <img src={imgContact} alt="..." />
+                    <div className='md:w-1/2 transition-all ease-linear duration-500 animate-swing'>
+                        <img src={imgContact} alt="..."  className=''/>
                     </div>
                 </div>
             </div>

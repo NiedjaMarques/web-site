@@ -7,7 +7,7 @@ const SectionNewsletter = () => {
         <>
             <div style={{ backgroundImage: `url(${bg13})` }} className="bg-cover bg-center bg-no-repeat my-10 md:flex items-center justify-center p-10 bg-roxo text-white">
 
-                <div className="md:w-1/3 md:mr-10">
+                <div className="md:w-1/3 md:mr-10 animate-swing">
                     <img src={img2} alt="" />
                 </div>
 

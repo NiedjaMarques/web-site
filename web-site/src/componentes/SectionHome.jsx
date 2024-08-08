@@ -34,8 +34,8 @@ const SectionHome = () => {
 
                     </div>
 
-                    <div style={{ backgroundImage: `url(${pic4})`}} className="md:w-1/2">
-                        <img src={pic5} alt="img" />
+                    <div style={{ backgroundImage: `url(${pic4})`}} className="md:w-1/2 ">
+                        <img src={pic5} alt="img" className="animate-swing" />
                     </div>
                     
                 </div>
