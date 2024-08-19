@@ -2,18 +2,19 @@ import { FaAngleRight} from "react-icons/fa6"
 import pic2 from '../../public/app/view/main-slider/slider1/pic2.png'
 import pic3 from '../../public/app/view/main-slider/slider1/pic3.png'
 import pic4 from '../../public/app/view/main-slider/slider1/pic4.png'
-import pic5 from '../../public/app/view/main-slider/slider1/pic5.png'
+import pic6 from '../../public/app/view/move/pic1.png'
+import pic7 from '../../public/app/view/move/pic2.png'
 
 const SectionHome = () => {
     return(
         <>
-            <div style={{ backgroundImage: `url(${pic2})` }} className='bg-center bg-no-repeat mt-24 bg-cover '>
+            <div style={{ backgroundImage: `url(${pic2})` }} className='bg-center bg-no-repeat my-24 bg-cover'>
 
                 <div className="container mx-auto px-10 md:flex items-center justify-center">
 
                     <div style={{ backgroundImage: `url(${pic3})` }} className='md:w-1/2 bg-cover bg-no-repeat '>
 
-                        <h6 className="sm:text-xl mb-4 font-bold text-roxo">
+                        <h6 className="mb-4 font-bold text-roxo">
                             WE CREATE IDEAS
                         </h6>
 
@@ -34,11 +35,15 @@ const SectionHome = () => {
 
                     </div>
 
-                    <div style={{ backgroundImage: `url(${pic4})`}} className="md:w-1/2 ">
-                        <img src={pic5} alt="img" className="animate-swing" />
+                    <div style={{ backgroundImage: `url(${pic4})`}} className="md:w-1/2 relative">
+                        <div className='relative'>
+                            <img src={pic6} alt="..." className="animate-swing z-10" />
+                            <img src={pic7} alt="..." className="animate-swing2 z-20 absolute bottom-0"  />
+                        </div>
                     </div>
                     
                 </div>
+                
             </div>
         </>
     )

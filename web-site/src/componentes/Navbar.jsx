@@ -57,12 +57,12 @@ const Navbar = () => {
 
                     <nav className='hidden md:flex'>
 
-                        <ul className='space-x-5 flex text-sm cursor-pointer  text-cinza-escuro'>
+                        <ul className='space-x-5 flex text-sm cursor-pointer'>
 
-                            <li className='hover:text-indigo-500 transition-all duration-300'>Home</li>
+                            <li className='hover:text-indigo-500 transition-all duration-300 font-semibold'>Home</li>
 
                             <li className='group'>
-                                <div className='flex items-center hover:text-indigo-500 transition-all duration-300'>Pages<FaAngleDown className='text-xs'/></div>
+                                <div className='flex items-center hover:text-indigo-500 transition-all duration-300 font-semibold'>Pages<FaAngleDown className='text-xs'/></div>
 
                                 <ul className='bg-white shadow-2xl py-1.5 absolute w-56 transition-opacity opacity-0 group-hover:opacity-100 group-hover:block hidden '>
                                     
@@ -99,7 +99,7 @@ const Navbar = () => {
 
                             <li className='group'>
                                 
-                                <div className='flex items-center hover:text-indigo-500 transition-all duration-300'>Services<FaAngleDown className='text-xs'/></div>
+                                <div className='flex items-center hover:text-indigo-500 transition-all duration-300 font-semibold'>Services<FaAngleDown className='text-xs'/></div>
 
                                 <ul className='bg-white shadow-2xl py-1.5 absolute w-56 transition-opacity opacity-0 group-hover:opacity-100 group-hover:block hidden'>
 
@@ -120,7 +120,7 @@ const Navbar = () => {
 
                             <li className='group'>
                                 
-                                <div className='flex items-center hover:text-indigo-500 transition-all duration-300'>Blog<FaAngleDown className='text-xs'/></div>
+                                <div className='flex items-center hover:text-indigo-500 transition-all duration-300 font-semibold'>Blog<FaAngleDown className='text-xs'/></div>
 
                                 <ul className='bg-white shadow-2xl py-1.5 absolute w-56 transition-opacity opacity-0 group-hover:opacity-100 group-hover:block hidden'>
 
@@ -139,7 +139,7 @@ const Navbar = () => {
 
                             </li>
                             
-                            <li className='hover:text-indigo-500 transition-all duration-300'>Contact Us</li>
+                            <li className='hover:text-indigo-500 transition-all duration-300 font-semibold'>Contact Us</li>
                             
                         </ul>
 

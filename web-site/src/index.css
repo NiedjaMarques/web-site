@@ -2,26 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Config Geral */
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
-/* @keyframes swing {
-    0% { transform: rotate(-15px); }
-    50% { transform: rotate(12px); }
-    100% { transform: rotate(-15px); }
-}
-
-@layer utilities {
-    .animate-swing {
-      animation: swing 4s infinite ease-in-out;
-      transform-origin: top left;
-    }
-} */
-
+/* Todas as Imagens do site */
 @keyframes swing {
     0% { transform: rotate(-2deg); }
     25% { transform: rotate(2deg); }
@@ -32,7 +21,93 @@ body{
 
 @layer utilities {
     .animate-swing {
-      animation: swing 8s infinite ease-in-out;
+      animation: swing 20s infinite ease-in-out;
       transform-origin: center;
     }
 }
+@layer utilities {
+    .animate-swing2 {
+      animation: swing 15s infinite ease-in-out;
+      transform-origin: center;
+    }
+}
+
+/* Section Services */
+.my-element {
+    position: relative;
+    overflow: visible;
+}
+
+.my-element::before,
+.my-element::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 55%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform 0.5s ease-out;
+    transform: scale(0);
+}
+
+.my-element::before {
+    top: 0;
+    left: 0;
+    background-image: url('../public/app/view/move/pattern5.png');
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+}
+
+.my-element::after {
+    bottom: 0;
+    right: 0;
+    background-image: url('../public/app/view/move/pattern6.png');
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+}
+
+.my-element:hover::before,
+.my-element:hover::after {
+    transform: scale(1);
+}
+
+@keyframes moveRight {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(50px); }
+}  
+
+@keyframes moveLeft {
+    0% { transform: translateX(50px); }
+    100% { transform: translateX(-50px); }
+}
+
+.my-element:hover .background-image {
+    animation-name: moveRight;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.my-element:not(:hover) .background-image {
+    animation-name: moveLeft;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+/* Section Fetures */
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+} 
+
+.vermelho:hover {
+    animation: rotate 3s infinite linear;
+}
+  
+  
+  

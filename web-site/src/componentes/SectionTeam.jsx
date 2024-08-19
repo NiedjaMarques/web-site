@@ -41,7 +41,7 @@ const SectionTeam = () => {
                     className='cursor-grab'>
 
                         <SwiperSlide>
-                            <div className="bg-white rounded-lg shadow-lg overflow-hidden m-5 bgslate-700">
+                            <div className="bg-white rounded-lg shadow-lg overflow-hidden m-5">
 
                                 <img src={person1} alt="img person1" className="rounded-md"/>
 

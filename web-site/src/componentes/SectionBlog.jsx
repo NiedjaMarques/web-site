@@ -1,8 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import bg1 from '../../public/app/view/background/bg/bg1.png'
 import pic1 from'../../public/app/view/blog/pic1.jpg';
 import pic2 from '../../public/app/view/blog/pic2.jpg';
 import pic3 from  '../../public/app/view/blog/pic3.jpg';
@@ -11,7 +9,7 @@ import { FaRegClock, FaRegComment, FaShareNodes } from "react-icons/fa6";
 const SectionBlog = () => {
     return(
         <>
-            <div className='my-10 container mx-auto px-10'>
+            <div style={{ backgroundImage: `url(${bg1})` }} className='bg-center bg-contain bg-no-repeat my-10 container mx-auto px-10'>
                 <div className="flex flex-col items-center">
 
                     <h6 className="px-7 py-2 my-4 text-center font-semibold text-roxo bg-roxo-transparente rounded-md">

@@ -1,8 +1,11 @@
-import { FaAngleRight } from "react-icons/fa6"
+import { FaAngleRight, FaPaintbrush } from "react-icons/fa6"
 import img5 from '../../public/app/view/img5.png'
-import connection from '../../public/app/view/connection.png'
-import datamanagement from '../../public/app/view/data-management.png' 
-import virtualreality from '../../public/app/view/virtual-reality.png'
+import connection from '../../public/app/view/foguete.png'
+import datamanagement from '../../public/app/view/caneta.png' 
+import virtualreality from '../../public/app/view/ideia.png'
+import red2 from '../../public/app/view/move/red2.png'
+import yellow1 from '../../public/app/view/move/yellow1.png'
+import green1 from '../../public/app/view/move/green3.png'
 
 const SectionFetures = () => {
     return(
@@ -20,7 +23,10 @@ const SectionFetures = () => {
 
                     <div className="mt-10 mb-5 flex items-center justify-center">
 
-                        <img className="w-16 rounded-full h-16 " src={virtualreality} alt="imgvirtualreality"/>
+                        <div className="relative z-30 w-56 h-32 p-10 flex items-center justify-center cursor-pointer ">
+                            <img className="absolute w-full h-full object-contain z-10 vermelho" src={red2} alt="red2" />
+                            <img className="absolute z-20 w-12 h-12 rounded-full" src={virtualreality} alt="imgvirtualreality"/>
+                        </div>
 
                         <div className="ml-5">
                         
@@ -38,7 +44,10 @@ const SectionFetures = () => {
 
                     <div className="mb-5 flex items-center justify-center md:ml-20 transition-all ease-linear duration-500">
                         
-                        <img className="w-16 h-16" src={datamanagement} alt="imgdatamanagement"/>
+                        <div className="relative z-30 w-56 h-32 p-10 flex items-center justify-center cursor-pointer ">
+                            <img className="absolute w-full h-full object-contain z-10 vermelho" src={yellow1} alt="red2" />
+                            <img className="absolute z-20 w-12 h-12 rounded-full " src={datamanagement} alt="imgvirtualreality"/>
+                        </div>
 
                         <div className="ml-5">
 
@@ -56,7 +65,10 @@ const SectionFetures = () => {
 
                     <div className="mb-5 flex items-center justify-center">
                         
-                        <img className="w-16 h-16" src={connection} alt="imgconnection"/>
+                        <div className="relative z-30 w-56 h-32 p-10 flex items-center justify-center cursor-pointer ">
+                            <img className="absolute w-full h-full object-contain z-10 vermelho" src={green1} alt="red2" />
+                            <img className="absolute z-20 w-12 h-12 rounded-full " src={connection} alt="imgvirtualreality"/>
+                        </div>
                         
                         <div className="ml-5">
 

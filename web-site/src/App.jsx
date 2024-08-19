@@ -20,35 +20,22 @@ import SectionEnd from './componentes/SectionEnd.jsx'
 function App() {
   return (
     <>
-      {/* <MainLayout> */}
-        <Header/>
-        <SectionHome/>
-        <SectionCarrossel/>        
-      {/* </MainLayout > */}
-
-      <SectionDados/>
-
-      {/* <MainLayout> */}
-        <SectionServices/>
-        <SectionAboutus/>
-        <SectionFetures/>
-        <SectionProjects/>
-      {/* </MainLayout> */}
-
+      <Header/>
+      <SectionHome/>
+      <SectionCarrossel/>        
+      <SectionDados/>      
+      <SectionServices/>      
+      <SectionAboutus/>
+      
+      <SectionFetures/>
+      <SectionProjects/>
       <SectionNewsletter/>
-      
-      {/* <MainLayout> */}
-        <SectionTeam/>
-        <SectionPricing/>
-      {/* </MainLayout> */}
-      
+      <SectionTeam/>
+      <SectionPricing/>
       <Testmonial/>
-
-      {/* <MainLayout> */}
-        <SectionBlog/>
-        <SectionContact/>
-        <SectionMoreWithUs/>        
-      {/* </MainLayout> */}
+      <SectionBlog/>
+      <SectionContact/>
+      <SectionMoreWithUs/>        
       <SectionEnd/>
     </>
   )

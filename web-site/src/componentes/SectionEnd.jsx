@@ -160,7 +160,7 @@ const SectionEnd = () => {
 
             <div className='text-center font-medium bg-violet-400 w-full text-white p-4'>
                 <p>
-                    Copyright © 2021 DexignZone. All rights reserved.
+                    2024 / Niedja Marques 
                 </p>
             </div>
         </>

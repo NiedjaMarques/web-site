@@ -38,13 +38,13 @@ const SectionProjects = () => {
 
             </div>
 
-            <div className='text-azul-escuro flex flex-wrap justify-center items-center mb-4'>
+            <div className='text-azul-escuro flex flex-wrap justify-center items-center mb-4 bg-gray-200 rounded-full'>
                 {['All', 'Web Design', 'Web Development', 'Branding', 'Mobile App', 'SEO'].map(category => (
                     <button
                         key={category}
                         onClick={() => handleFilterChange(category)}
                         className={`m-2 px-4 py-1 rounded-3xl cursor-pointer ${
-                            filter === category ? 'bg-purple-500 text-white' : 'bg-gray-200 text-azul-escuro'
+                            filter === category ? 'bg-roxo text-white shadow-lg' : ' text-azul-escuro'
                         }`}
                     >
                         {category}
