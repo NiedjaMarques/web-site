@@ -5,7 +5,7 @@ import bg13 from '../../public/app/view/background/bg/bg13.png'
 const SectionNewsletter = () => {
     return(
         <>
-            <div style={{ backgroundImage: `url(${bg13})` }} className="bg-cover bg-center bg-no-repeat my-10 md:flex items-center justify-center p-10 bg-roxo text-white">
+            <div style={{ backgroundImage: `url(${bg13})` }} className="bg-cover bg-center bg-no-repeat my-12 md:flex items-center justify-center p-10 bg-roxo text-white">
 
                 <div className="md:w-1/3 md:mr-10 animate-swing">
                     <img src={img2} alt="" />

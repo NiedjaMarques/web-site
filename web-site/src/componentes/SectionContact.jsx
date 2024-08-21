@@ -7,7 +7,7 @@ const SectionContact = () => {
         <>
             <div style={{ backgroundImage: `url(${bg18})` }} className='bg-cover bg-center bg-no-repeat'>
 
-                <div className='bg-slate400 my-10 md:flex items-center justify-center container mx-auto px-10'>
+                <div className='bg-slate400 my-12 md:flex items-center justify-center container mx-auto px-10'>
 
                     <div className='md:w-1/2 mt-2 '>
 

@@ -5,17 +5,17 @@ import sign from '../../public/app/view/sign.png'
 const SectionAboutus = () => {
     return(
         <>
-            <div className="mt-10 md:flex items-center justify-center container mx-auto px-10">
-                <div className="md:w-1/2 animate-swing">
+            <div className="my-12 md:flex items-center justify-center container mx-auto px-10">
+                <div className="md:w-1/2 animate-swing mb-5">
                     <img src={img2} alt="..." />
                 </div>
 
-                <div className="md:w-1/2 mt-2">
+                <div className="md:w-1/2 mt-5">
                     <h6 className="w-32 px-4 py-2 my-4 text-center font-semibold text-roxo bg-roxo-transparente rounded-md">
                         About Us
                     </h6>
 
-                    <h1 className="font-bold text-3xl  text-azul-escuro mb-5">
+                    <h1 className="font-bold text-3xl text-azul-escuro mb-5">
                         How We Can Help You Achieve Your Business Goal
                     </h1>
 

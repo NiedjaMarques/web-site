@@ -10,7 +10,7 @@ const SectionPricing = () => {
   }
 
     return (
-        <div style={{ backgroundImage: `url(${bg1})` }} className="py-10 bg-center bg-contain bg-no-repeat container mx-auto px-10">
+        <div style={{ backgroundImage: `url(${bg1})` }} className="my-12 bg-center bg-contain bg-no-repeat container mx-auto px-10">
 
             <div className="flex flex-col items-center">
 

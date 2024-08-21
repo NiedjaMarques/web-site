@@ -25,7 +25,7 @@ const SectionProjects = () => {
     const filteredItems = filter === 'All' ? items.find(item => item.category === 'All').img : items.find(item => item.category === filter)?.img || [];
 
     return (
-        <div className='py-5 container mx-auto px-10'>
+        <div className='my-12 container mx-auto px-10'>
             <div className="flex flex-col items-center">
 
                 <h6 className="px-4 py-2 my-4 text-center font-semibold text-roxo bg-roxo-transparente rounded-md">

@@ -26,7 +26,6 @@ function App() {
       <SectionDados/>      
       <SectionServices/>      
       <SectionAboutus/>
-      
       <SectionFetures/>
       <SectionProjects/>
       <SectionNewsletter/>

@@ -13,7 +13,7 @@ import { FaStar } from "react-icons/fa6";
 const Testmonial = () => {
     return(
         <>
-            <div style={{ backgroundImage: `url(${bg3})` }} className='bg-cover bg-center bg-no-repeat bg-roxo py-10 grid grid-cols-1 md:grid-cols-3 gap-2 items-center'>
+            <div style={{ backgroundImage: `url(${bg3})` }} className='bg-cover bg-center bg-no-repeat bg-roxo my-12 grid grid-cols-1 md:grid-cols-3 gap-2 items-center'>
 
                 <div className='p-4 text-white sm:col-span-1'>
 

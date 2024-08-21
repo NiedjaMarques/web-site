@@ -10,7 +10,7 @@ import green1 from '../../public/app/view/move/green3.png'
 const SectionFetures = () => {
     return(
         <>
-            <div className="mt-10 md:flex items-center justify-center container mx-auto px-10">
+            <div className="my-12 md:flex items-center justify-center container mx-auto px-10">
 
                 <div className="md:w-1/2 mt-2 ">
                     <h6 className="w-32 text-center px-4 py-2 my-4 font-semibold text-roxo bg-roxo-transparente rounded-md">

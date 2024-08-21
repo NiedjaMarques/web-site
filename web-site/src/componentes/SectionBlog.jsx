@@ -9,7 +9,7 @@ import { FaRegClock, FaRegComment, FaShareNodes } from "react-icons/fa6";
 const SectionBlog = () => {
     return(
         <>
-            <div style={{ backgroundImage: `url(${bg1})` }} className='bg-center bg-contain bg-no-repeat my-10 container mx-auto px-10'>
+            <div style={{ backgroundImage: `url(${bg1})` }} className='bg-center bg-contain bg-no-repeat my-12 container mx-auto px-10'>
                 <div className="flex flex-col items-center">
 
                     <h6 className="px-7 py-2 my-4 text-center font-semibold text-roxo bg-roxo-transparente rounded-md">

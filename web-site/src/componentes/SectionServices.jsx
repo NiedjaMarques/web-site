@@ -10,7 +10,7 @@ import '../index.css'
 const SectionServices = () => {
   return(
     <>
-      <div style={{ backgroundImage: `url(${bg1})` }} className="p-10 container mx-auto bg-cover bg-center bg-no-repeat">
+      <div style={{ backgroundImage: `url(${bg1})` }} className="p-10 my-12 container mx-auto bg-cover bg-center bg-no-repeat">
 
         <div className="flex flex-col items-center">
 

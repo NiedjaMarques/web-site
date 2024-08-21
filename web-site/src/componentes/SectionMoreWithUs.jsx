@@ -8,7 +8,7 @@ const SectionMoreWithUs = () => {
 
                 <div  className="my-10 py-1 container mx-auto px-10 ">
 
-                    <h2 className="w-40 text-center px-4 py-3 my-2 font-semibold text-roxo bg-[#f7f6fe7a] rounded-md">
+                    <h2 className="w-40 text-center px-4 py-3 my-4 font-semibold text-roxo bg-[#f7f6fe7a] rounded-md">
                         More With Us
                     </h2>
 
