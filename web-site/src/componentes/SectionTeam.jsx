@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Pagination } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 import person1 from '../../public/app/view/Teams/person1.jpg'
 import person2 from '../../public/app/view/Teams/person2.jpg'
 import person3 from '../../public/app/view/Teams/person3.jpg'
@@ -27,10 +27,15 @@ const SectionTeam = () => {
 
                 <div className='flex items-center justify-center pb-10'>
 
-                    <Swiper slidesPerView={1}
+                    <Swiper 
+                    slidesPerView={1}
                     spaceBetween={10}
                     loop={true}
-                    modules={[Pagination]}
+                    autoplay={{
+                        delay: 2000,
+                        disableOnInteraction: false,
+                    }}
+                    modules={[Pagination, Autoplay]}
                     breakpoints={{
                         640: {
                             slidesPerView: 3, 

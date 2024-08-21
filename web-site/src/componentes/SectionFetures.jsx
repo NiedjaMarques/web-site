@@ -1,8 +1,7 @@
-import { FaAngleRight, FaPaintbrush } from "react-icons/fa6"
+import { FaPanorama } from "react-icons/fa6"
 import img5 from '../../public/app/view/img5.png'
-import connection from '../../public/app/view/foguete.png'
-import datamanagement from '../../public/app/view/caneta.png' 
-import virtualreality from '../../public/app/view/ideia.png'
+import foguete from '../../public/app/view/foguete.png'
+import ideia from '../../public/app/view/ideia.png'
 import red2 from '../../public/app/view/move/red2.png'
 import yellow1 from '../../public/app/view/move/yellow1.png'
 import green1 from '../../public/app/view/move/green3.png'
@@ -12,7 +11,7 @@ const SectionFetures = () => {
         <>
             <div className="my-12 md:flex items-center justify-center container mx-auto px-10">
 
-                <div className="md:w-1/2 mt-2 ">
+                <div className="md:w-1/2 mt-2">
                     <h6 className="w-32 text-center px-4 py-2 my-4 font-semibold text-roxo bg-roxo-transparente rounded-md">
                         Fetures
                     </h6>
@@ -23,9 +22,9 @@ const SectionFetures = () => {
 
                     <div className="mt-10 mb-5 flex items-center justify-center">
 
-                        <div className="relative z-30 w-56 h-32 p-10 flex items-center justify-center cursor-pointer ">
-                            <img className="absolute w-full h-full object-contain z-10 vermelho" src={red2} alt="red2" />
-                            <img className="absolute z-20 w-12 h-12 rounded-full" src={virtualreality} alt="imgvirtualreality"/>
+                        <div className="girarDiv relative z-30 w-56 h-32 p-10 flex items-center justify-center cursor-pointer bg-geen-300 border8 border-blue-800">
+                            <img className="girarImg absolute w-full h-full object-contain z-10 bg-reen-200" src={red2} alt="red2" />
+                            <img className="absolute z-20 w-12 h-12 rounded-full bg-lue-500" src={ideia} alt="ideia"/>
                         </div>
 
                         <div className="ml-5">
@@ -44,9 +43,9 @@ const SectionFetures = () => {
 
                     <div className="mb-5 flex items-center justify-center md:ml-20 transition-all ease-linear duration-500">
                         
-                        <div className="relative z-30 w-56 h-32 p-10 flex items-center justify-center cursor-pointer ">
-                            <img className="absolute w-full h-full object-contain z-10 vermelho" src={yellow1} alt="red2" />
-                            <img className="absolute z-20 w-12 h-12 rounded-full " src={datamanagement} alt="imgvirtualreality"/>
+                        <div className="girarDiv relative z-30 w-56 h-32 p-10 flex items-center justify-center cursor-pointer ">
+                            <img className="girarImg absolute w-full h-full object-contain z-10" src={yellow1} alt="red2"/>
+                            <FaPanorama className="absolute z-20 w-10 h-16"/>
                         </div>
 
                         <div className="ml-5">
@@ -65,9 +64,9 @@ const SectionFetures = () => {
 
                     <div className="mb-5 flex items-center justify-center">
                         
-                        <div className="relative z-30 w-56 h-32 p-10 flex items-center justify-center cursor-pointer ">
-                            <img className="absolute w-full h-full object-contain z-10 vermelho" src={green1} alt="red2" />
-                            <img className="absolute z-20 w-12 h-12 rounded-full " src={connection} alt="imgvirtualreality"/>
+                        <div className="girarDiv relative z-30 w-56 h-32 p-10 flex items-center justify-center cursor-pointer ">
+                            <img className="girarImg absolute w-full h-full object-contain z-10" src={green1} alt="red2" />
+                            <img className="absolute z-20 w-12 h-12 rounded-full " src={foguete} alt="foguete"/>
                         </div>
                         
                         <div className="ml-5">
@@ -89,6 +88,7 @@ const SectionFetures = () => {
                 <div className="md:w-1/2 transition-all ease-linear duration-500 animate-swing">
                     <img src={img5} alt="img5"/>
                 </div>
+                
             </div>
         </>
     )

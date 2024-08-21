@@ -26,7 +26,7 @@ const SectionPricing = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-center">
 
-                <div onMouseEnter={() => handleMouseEnter(0)} className={`${ selectedCart === 0 ? "translate-y-0 bg-gradient-to-r from-roxo to-blue-700 text-white" : "translate-y-4 bg-white"} rounded-lg shadow-lg overflow-hidden p-6 group transition-all ease duration-500 drop-shadow-xl cursor-pointer`}>
+                <div onMouseEnter={() => handleMouseEnter(0)} className={`${ selectedCart === 0 ? "translate-y-0 bg-gradient-to-r from-roxo to-blue-700 text-white" : "md:translate-y-4 bg-white"} rounded-lg shadow-lg overflow-hidden p-6 group transition-all ease duration-500 drop-shadow-xl cursor-pointer`}>
 
                     <h3 className={`text-3xl font-bold ${selectedCart === 0 ? "text-white" : "text-azul-escuro"} pb-2`}>
                         Basic Plan
@@ -57,7 +57,7 @@ const SectionPricing = () => {
 
                 </div>
 
-                <div onMouseEnter={() => handleMouseEnter(1)} className={`${ selectedCart === 1 ? "translate-y-0 bg-gradient-to-r from-roxo to-blue-700 text-white" : "translate-y-4 bg-white" } rounded-lg shadow-lg overflow-hidden p-6 group transition-all ease duration-500 drop-shadow-xl cursor-pointer`}>
+                <div onMouseEnter={() => handleMouseEnter(1)} className={`${ selectedCart === 1 ? "translate-y-0 bg-gradient-to-r from-roxo to-blue-700 text-white" : "md:translate-y-4 bg-white" } rounded-lg shadow-lg overflow-hidden p-6 group transition-all ease duration-500 drop-shadow-xl cursor-pointer`}>
 
                     <h3 className={`text-3xl font-bold ${selectedCart === 1 ? "text-white" : "text-azul-escuro"} pb-2`}>
                         Standard Plan
@@ -88,7 +88,7 @@ const SectionPricing = () => {
 
                 </div>
 
-                <div onMouseEnter={() => handleMouseEnter(2)} className={`${ selectedCart === 2 ? "translate-y-0 bg-gradient-to-r from-roxo to-blue-700 text-white" : "translate-y-4 bg-white" } rounded-lg shadow-lg overflow-hidden p-6 group transition-all ease duration-500 drop-shadow-xl cursor-pointer`}>
+                <div onMouseEnter={() => handleMouseEnter(2)} className={`${ selectedCart === 2 ? "translate-y-0 bg-gradient-to-r from-roxo to-blue-700 text-white" : "md:translate-y-4 bg-white" } rounded-lg shadow-lg overflow-hidden p-6 group transition-all ease duration-500 drop-shadow-xl cursor-pointer`}>
 
                     <h3 className={`text-3xl font-bold ${selectedCart === 2 ? "text-white" : "text-azul-escuro"} pb-2`}>
                         Premium Plan

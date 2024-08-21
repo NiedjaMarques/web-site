@@ -105,9 +105,7 @@ body{
     }
 } 
 
-.vermelho:hover {
+.girarDiv:hover .girarImg {
     animation: rotate 3s infinite linear;
 }
-  
-  
   
