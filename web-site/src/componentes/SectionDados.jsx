@@ -82,7 +82,7 @@ import CountUp from 'react-countup'
 const SectionDados = () => {
 
     const [counterOn, setCounterOn] = useState(false)
-    const triggerRef = useRef(null)
+    const triggerRefs = useRef([])
 
     useEffect(() => {
         const observer = new IntersectionObserver(([entry]) => {
@@ -93,19 +93,23 @@ const SectionDados = () => {
             }
         }, { threshold: 0.5 });
 
-        if (triggerRef.current) {
-            observer.observe(triggerRef.current);
-        }
+        triggerRefs.current.forEach(ref => {
+            if (ref) {
+                observer.observe(ref)
+            }
+        })
 
         return () => {
-            if (triggerRef.current) {
-                observer.unobserve(triggerRef.current);
-            }
-        };
+            triggerRefs.current.forEach(ref => {
+                if (ref) {
+                    observer.unobserve(ref)
+                }
+            })
+        }
     }, [])
 
     return (
-        <div ref={triggerRef} style={{ backgroundImage: `url(${bg3})` }} className="bg-roxo bg-cover bg-no-repeat bg-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 px-4 w-full py-12 my-12 justify-around">
+        <div style={{ backgroundImage: `url(${bg3})` }} className="bg-roxo bg-cover bg-no-repeat bg-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 px-4 w-full py-12 my-12 justify-around">
 
             <div className='text-center my-4 bg-white p-10 hover:-translate-y-4 transition-all ease-linear duration-500 flex flex-col justify-center items-center rounded-2xl drop-shadow-2xl cursor-pointer'>
 
@@ -115,7 +119,7 @@ const SectionDados = () => {
                 <p className='pb-3 font-semibold text-xl'>
                     Satisfied Clients
                 </p>
-                <span className='text-roxo text-3xl font-bold'>
+                <span ref={el => triggerRefs.current[0] = el} className='text-roxo text-3xl font-bold'>
                     {counterOn && <CountUp start={0} end={9875} duration={2} separator="" delay={0} />}
                 </span>
 
@@ -129,7 +133,7 @@ const SectionDados = () => {
                 <p className='pb-3 font-semibold text-xl'>
                     Project Completed
                 </p>
-                <span className='text-roxo text-3xl font-bold'>
+                <span ref={el => triggerRefs.current[1] = el} className='text-roxo text-3xl font-bold'>
                     {counterOn && <CountUp start={0} end={8765} duration={2} separator="" delay={0}/>}
                 </span>
                 
@@ -143,7 +147,7 @@ const SectionDados = () => {
                 <p className='pb-3 font-semibold text-xl'>
                     Project Lunched
                 </p>
-                <span className='text-roxo text-3xl font-bold'>
+                <span ref={el => triggerRefs.current[2] = el} className='text-roxo text-3xl font-bold'>
                     {counterOn && <CountUp start={0} end={7894} duration={2} separator="" delay={0}/>}
                 </span>
 
@@ -157,7 +161,7 @@ const SectionDados = () => {
                 <p className='pb-3 font-semibold text-xl'>
                     Years Completed
                 </p>
-                <span className='text-roxo text-3xl font-bold'>
+                <span ref={el => triggerRefs.current[3] = el} className='text-roxo text-3xl font-bold'>
                     {counterOn && <CountUp start={0} end={65} duration={2} separator="" delay={0}/>}
                 </span>
 
