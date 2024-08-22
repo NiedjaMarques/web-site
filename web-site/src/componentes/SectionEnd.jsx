@@ -1,4 +1,4 @@
-import logoWhite from '../../public/app/view/logo-white.png';
+import logoWhite from '/app/view/logo-white.png';
 import { FaMapLocationDot, FaEnvelopesBulk, FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa6";
 
 const SectionEnd = () => {

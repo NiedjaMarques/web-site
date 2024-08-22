@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import img1 from '../../public/app/view/pic11.jpg';
-import img2 from '../../public/app/view/pic22.jpg';
-import img3 from '../../public/app/view/pic33.jpg';
-import img4 from '../../public/app/view/pic44.jpg';
-import img5 from '../../public/app/view/pic55.jpg';
-import img6 from '../../public/app/view/pic66.jpg';
+import img1 from '/app/view/pic11.jpg';
+import img2 from '/app/view/pic22.jpg';
+import img3 from '/app/view/pic33.jpg';
+import img4 from '/app/view/pic44.jpg';
+import img5 from '/app/view/pic55.jpg';
+import img6 from '/app/view/pic66.jpg';
 
 const items = [
     { id: 1, category: 'All', img: [img1, img2, img3, img4, img5, img6] },

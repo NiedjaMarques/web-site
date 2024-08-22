@@ -1,6 +1,6 @@
-import imgContact from '../../public/app/view/main-slider/slider3/img1.png'
+import imgContact from '/app/view/main-slider/slider3/img1.png'
 import { FaAngleRight, FaRegUser, FaRegEnvelope, FaListUl, FaPhone, FaRegFileLines, FaRegCommentDots } from "react-icons/fa6";
-import bg18 from '../../public/app/view/background/bg/bg19.png'
+import bg18 from '/app/view/background/bg/bg19.png'
 
 const SectionContact = () => {
     return(

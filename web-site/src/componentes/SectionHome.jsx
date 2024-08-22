@@ -1,9 +1,9 @@
 import { FaAngleRight} from "react-icons/fa6"
-import pic2 from '../../public/app/view/main-slider/slider1/pic2.png'
-import pic3 from '../../public/app/view/main-slider/slider1/pic3.png'
-import pic4 from '../../public/app/view/main-slider/slider1/pic4.png'
-import pic6 from '../../public/app/view/move/pic1.png'
-import pic7 from '../../public/app/view/move/pic2.png'
+import pic2 from '/app/view/main-slider/slider1/pic2.png'
+import pic3 from '/app/view/main-slider/slider1/pic3.png'
+import pic4 from '/app/view/main-slider/slider1/pic4.png'
+import pic6 from '/app/view/move/pic1.png'
+import pic7 from '/app/view/move/pic2.png'
 
 const SectionHome = () => {
     return(

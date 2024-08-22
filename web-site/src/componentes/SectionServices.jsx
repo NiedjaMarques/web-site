@@ -1,10 +1,10 @@
-import img1 from '../../public/app/view/flaticon/clickstream.png'
-import img2 from '../../public/app/view/flaticon/cloud-computing.png'
-import img3 from '../../public/app/view/flaticon/dashboard.png'
-import green from '../../public/app/view/move/green.png'
-import yellow from '../../public/app/view/move/yellow.png'
-import red from '../../public/app/view/move/red.png'
-import bg1 from '../../public/app/view/background/bg/bg1.png'
+import img1 from '/app/view/flaticon/clickstream.png'
+import img2 from '/app/view/flaticon/cloud-computing.png'
+import img3 from '/app/view/flaticon/dashboard.png'
+import green from '/app/view/move/green.png'
+import yellow from '/app/view/move/yellow.png'
+import red from '/app/view/move/red.png'
+import bg1 from '/app/view/background/bg/bg1.png'
 import '../index.css'
 
 const SectionServices = () => {

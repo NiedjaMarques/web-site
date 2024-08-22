@@ -1,10 +1,10 @@
 import { useInView } from 'react-intersection-observer'
 import CountUp from 'react-countup'
-import bg3 from '../../public/app/view/background/bg/bg3.png'
-import project from '../../public/app/view/flaticon/risonho.png'
-import project1 from '../../public/app/view/flaticon/computador.png'
-import project2 from '../../public/app/view/flaticon/foguete.png'
-import project3 from '../../public/app/view/flaticon/fogos-de-artificio.png'
+import bg3 from '/app/view/background/bg/bg3.png'
+import project from '/app/view/flaticon/risonho.png'
+import project1 from '/app/view/flaticon/computador.png'
+import project2 from '/app/view/flaticon/foguete.png'
+import project3 from '/app/view/flaticon/fogos-de-artificio.png'
 
 const SectionDados = () => {
 

@@ -1,5 +1,4 @@
 import './index.css'
-//import MainLayout from './componentes/Main'
 import Header from './componentes/Header'
 import SectionHome from './componentes/SectionHome'
 import SectionCarrossel from './componentes/SectionCarrossel.jsx'

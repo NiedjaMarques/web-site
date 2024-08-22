@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { FaAngleRight } from "react-icons/fa6"
-import bg1 from '../../public/app/view/background/bg/bg1.png'
+import bg1 from '/app/view/background/bg/bg1.png'
 
 const SectionPricing = () => {
   const [selectedCart, setSelectedCart] = useState(1)

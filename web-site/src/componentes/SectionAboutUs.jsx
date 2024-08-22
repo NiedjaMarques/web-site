@@ -1,6 +1,6 @@
 import { FaAngleRight } from "react-icons/fa6"
-import img2 from '../../public/app/view/img2.png'
-import sign from '../../public/app/view/sign.png'
+import img2 from '/app/view/img2.png'
+import sign from '/app/view/sign.png'
 
 const SectionAboutus = () => {
     return(

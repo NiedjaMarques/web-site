@@ -1,5 +1,5 @@
-import img2 from '../../public/app/view/img9.png'
-import bg13 from '../../public/app/view/background/bg/bg13.png'
+import img2 from '/app/view/img9.png'
+import bg13 from '/app/view/background/bg/bg13.png'
 
 
 const SectionNewsletter = () => {

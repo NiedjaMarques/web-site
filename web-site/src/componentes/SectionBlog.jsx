@@ -1,9 +1,9 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import bg1 from '../../public/app/view/background/bg/bg1.png'
-import pic1 from'../../public/app/view/blog/pic1.jpg';
-import pic2 from '../../public/app/view/blog/pic2.jpg';
-import pic3 from  '../../public/app/view/blog/pic3.jpg';
+import bg1 from '/app/view/background/bg/bg1.png'
+import pic1 from'/app/view/blog/pic1.jpg';
+import pic2 from '/app/view/blog/pic2.jpg';
+import pic3 from  '/app/view/blog/pic3.jpg';
 import { FaRegClock, FaRegComment, FaShareNodes } from "react-icons/fa6";
 
 const SectionBlog = () => {

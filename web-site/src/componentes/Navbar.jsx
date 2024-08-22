@@ -1,4 +1,4 @@
-import logo from '../../public/app/view/logo.png';
+import logo from '/app/view/logo.png';
 import { FaAngleRight, FaAngleDown, FaAlignRight, FaX, FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa6";
 import { useState, useEffect } from 'react';
 

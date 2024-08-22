@@ -1,17 +1,17 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import logoblue1 from '../../public/app/view/logo/logo-blue1.png'
-import logolight1 from '../../public/app/view/logo/logo-light1.png'
-import logoblue2 from '../../public/app/view/logo/logo-blue2.png'
-import logolight2 from '../../public/app/view/logo/logo-light2.png'
-import logoblue3 from '../../public/app/view/logo/logo-blue3.png'
-import logolight3 from '../../public/app/view/logo/logo-light3.png'
-import logoblue4 from '../../public/app/view/logo/logo-blue4.png'
-import logolight4 from '../../public/app/view/logo/logo-light4.png'
-import logoblue5 from '../../public/app/view/logo/logo-blue5.png'
-import logolight5 from '../../public/app/view/logo/logo-light5.png'
-import logoblue6 from '../../public/app/view/logo/logo-blue6.png'
-import logolight6 from '../../public/app/view/logo/logo-light6.png'
+import logoblue1 from '/app/view/logo/logo-blue1.png'
+import logolight1 from '/app/view/logo/logo-light1.png'
+import logoblue2 from '/app/view/logo/logo-blue2.png'
+import logolight2 from '/app/view/logo/logo-light2.png'
+import logoblue3 from '/app/view/logo/logo-blue3.png'
+import logolight3 from '/app/view/logo/logo-light3.png'
+import logoblue4 from '/app/view/logo/logo-blue4.png'
+import logolight4 from '/app/view/logo/logo-light4.png'
+import logoblue5 from '/app/view/logo/logo-blue5.png'
+import logolight5 from '/app/view/logo/logo-light5.png'
+import logoblue6 from '/app/view/logo/logo-blue6.png'
+import logolight6 from '/app/view/logo/logo-light6.png'
 
 const SectionCarrossel = () => {
     return(

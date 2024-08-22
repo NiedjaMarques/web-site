@@ -1,10 +1,10 @@
 import { FaPanorama } from "react-icons/fa6"
-import img5 from '../../public/app/view/img5.png'
-import foguete from '../../public/app/view/foguete.png'
-import ideia from '../../public/app/view/ideia.png'
-import red2 from '../../public/app/view/move/red2.png'
-import yellow1 from '../../public/app/view/move/yellow1.png'
-import green1 from '../../public/app/view/move/green3.png'
+import img5 from '/app/view/img5.png'
+import foguete from '/app/view/foguete.png'
+import ideia from '/app/view/ideia.png'
+import red2 from '/app/view/move/red2.png'
+import yellow1 from '/app/view/move/yellow1.png'
+import green1 from '/app/view/move/green3.png'
 
 const SectionFetures = () => {
     return(

@@ -1,5 +1,5 @@
 import { FaAngleRight } from "react-icons/fa6";
-import bg3 from '../../public/app/view/background/bg/bg3.png'
+import bg3 from '/app/view/background/bg/bg3.png'
 
 const SectionMoreWithUs = () => {
     return(
